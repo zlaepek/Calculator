@@ -1,26 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('compile') {
-      parallel {
-        stage('compile') {
-          steps {
-            sh './gradlew compileJava'
-          }
-        }
-
-        stage('test') {
-          steps {
-            sh './gradlew test'
-          }
-        }
-
-        stage('error') {
-          steps {
-            sh 'ls -l gradlew'
-          }
-        }
-
+    stage('chmod') {
+      steps {
+        sh '''chmod 777 gradlew
+ls -l gradlew'''
       }
     }
 
