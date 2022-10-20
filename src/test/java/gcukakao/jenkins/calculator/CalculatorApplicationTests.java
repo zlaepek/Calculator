@@ -6,8 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @Tag("IntegrationTest")
 @SpringBootTest
-class CalculatorApplicationTests  extends IntegrationTest{
-
+//class CalculatorApplicationTests extends IntegrationTest{
+class CalculatorApplicationTests{
 	@Test
 	void contextLoads() {
 	}
