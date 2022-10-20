@@ -17,7 +17,7 @@ pipeline {
 
         stage('error') {
           steps {
-            sh 'chmod 777 gradlew'
+            sh 'ls -l gradlew'
           }
         }
 
