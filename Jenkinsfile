@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('compile') {
       steps {
-        sh '''pipeline{
+        sh '''pipeline {
   agent any
  stages {
    stage("Compile") {
