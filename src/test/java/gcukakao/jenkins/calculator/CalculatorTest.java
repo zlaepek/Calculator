@@ -24,5 +24,10 @@ public class CalculatorTest {
      @Test 
      public void testDiv() { 
           assertEquals(6, calculator.div(12, 2)); 
-     } 
+     }
+
+     @Test
+     public void testSquare() {
+          assertEquals(4, calculator.div(2, 2));
+     }
 } 
